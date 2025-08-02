@@ -37,8 +37,6 @@ services:
         value: '2018Authority'
 
       # ✅ Optional but recommended
-      - key: N8N_RUNNERS_ENABLED
-        value: 'true'
       - key: N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS
         value: 'true'
 
