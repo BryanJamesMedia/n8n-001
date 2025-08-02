@@ -51,13 +51,16 @@ services:
         fromDatabase:
           name: n8n-db
           property: user
-      - key: N8N_BASIC_AUTH_ACTIVE
+ - key: N8N_BASIC_AUTH_ACTIVE
         value: 'true'
       - key: N8N_BASIC_AUTH_USER
-        value: bryan@authorityapex.com
+        value: 'bryan@authorityapex.com'
       - key: N8N_BASIC_AUTH_PASSWORD
-        value: $2018Authority
-
+        value: '2018Authority'
+      - key: N8N_RUNNERS_ENABLED
+        value: 'true'
+      - key: N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS
+        value: 'true'
 databases:
   - name: n8n-db
     plan: free
