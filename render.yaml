@@ -28,18 +28,6 @@ services:
           name: n8n-db
           property: user
 
-      # ✅ Properly indented basic auth config
-      - key: N8N_BASIC_AUTH_ACTIVE
-        value: 'true'
-      - key: N8N_BASIC_AUTH_USER
-        value: 'bryan@authorityapex.com'
-      - key: N8N_BASIC_AUTH_PASSWORD
-        value: '2018Authority'
-
-      # ✅ Optional but recommended
-      - key: N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS
-        value: 'true'
-
 databases:
   - name: n8n-db
     plan: free
